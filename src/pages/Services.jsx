@@ -5,6 +5,10 @@ import {
   FaIndustry,
   FaHammer,
   FaTruck,
+  FaCut,
+  FaDraftingCompass,
+  FaFireAlt,
+  FaPaintRoller,
 } from "react-icons/fa";
 
 import ServiceCard from "../components/ServiceCard";
@@ -18,35 +22,70 @@ const Services = () => {
       description:
         "Professional repair of industrial machines and mechanical systems.",
     },
+
     {
       icon: FaWrench,
       title: "Welding & Fabrication",
       description:
         "High-quality welding and steel fabrication for industrial use.",
     },
+
     {
       icon: FaCogs,
       title: "Lathe Machine Operations",
       description:
         "Precision machining and lathe services for metal components.",
     },
+
     {
       icon: FaIndustry,
       title: "Industrial Maintenance",
       description:
         "Preventive and corrective maintenance for industrial equipment.",
     },
+
     {
       icon: FaHammer,
       title: "Heavy Fabrication",
       description:
         "Construction of heavy-duty metal structures and frameworks.",
     },
+
     {
       icon: FaTruck,
       title: "Spare Parts Supply",
       description:
         "Reliable supply of industrial and mechanical spare parts.",
+    },
+
+    /* NEW SERVICES */
+
+    {
+      icon: FaCut,
+      title: "CNC Fiber Laser Cutting",
+      description:
+        "Precision CNC laser cutting services for sheet metal and industrial fabrication projects.",
+    },
+
+    {
+      icon: FaDraftingCompass,
+      title: "CNC Sheet Metal Bending",
+      description:
+        "Accurate CNC bending solutions for custom metal fabrication and industrial applications.",
+    },
+
+    {
+      icon: FaFireAlt,
+      title: "ARC, MIG, TIG & Spot Welding",
+      description:
+        "Professional welding services for stainless steel, aluminum, and heavy-duty fabrication.",
+    },
+
+    {
+      icon: FaPaintRoller,
+      title: "Powder Coating Services",
+      description:
+        "Durable and high-quality powder coating finishes for industrial and commercial products.",
     },
   ];
 
@@ -72,8 +111,11 @@ const Services = () => {
               description={service.description}
             />
           ))}
+
         </div>
+
       </div>
+
     </section>
   );
 };

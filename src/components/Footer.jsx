@@ -12,13 +12,14 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0F172A] text-white mb-0">
+    <footer className="bg-[#0F172A] text-white">
 
       {/* Top Footer */}
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 
         {/* Company Info */}
         <div>
+
           <h2 className="text-3xl font-extrabold">
             MECH<span className="text-orange-500">TECH</span>
           </h2>
@@ -26,7 +27,7 @@ const Footer = () => {
           <p className="mt-5 text-gray-300 leading-relaxed">
             Professional mechanical engineering solutions specializing in
             welding, fabrication, lathe machining, industrial repairs,
-            and spare parts supply.
+            spare parts supply, and CNC services.
           </p>
 
           {/* Socials */}
@@ -59,11 +60,13 @@ const Footer = () => {
             >
               <FaWhatsapp />
             </a>
+
           </div>
         </div>
 
         {/* Quick Links */}
         <div>
+
           <h3 className="text-xl font-bold mb-6 text-orange-500">
             Quick Links
           </h3>
@@ -108,23 +111,35 @@ const Footer = () => {
 
             <li>
               <Link
+                to="/spare-parts"
+                className="hover:text-orange-500 transition"
+              >
+                Spare Parts
+              </Link>
+            </li>
+
+            <li>
+              <Link
                 to="/contact"
                 className="hover:text-orange-500 transition"
               >
                 Contact
               </Link>
             </li>
+
           </ul>
         </div>
 
         {/* Services */}
         <div>
+
           <h3 className="text-xl font-bold mb-6 text-orange-500">
             Our Services
           </h3>
 
           <ul className="space-y-4 text-gray-300">
 
+            {/* Existing Services */}
             <li className="hover:text-orange-500 transition cursor-pointer">
               Welding & Fabrication
             </li>
@@ -144,11 +159,30 @@ const Footer = () => {
             <li className="hover:text-orange-500 transition cursor-pointer">
               Machine Maintenance
             </li>
+
+            {/* New Services */}
+            <li className="hover:text-orange-500 transition cursor-pointer">
+              CNC Fiber Laser Cutting
+            </li>
+
+            <li className="hover:text-orange-500 transition cursor-pointer">
+              CNC Sheet Metal Bending
+            </li>
+
+            <li className="hover:text-orange-500 transition cursor-pointer">
+              ARC, MIG, TIG & Spot Welding
+            </li>
+
+            <li className="hover:text-orange-500 transition cursor-pointer">
+              Powder Coating Services
+            </li>
+
           </ul>
         </div>
 
         {/* Contact Info */}
         <div>
+
           <h3 className="text-xl font-bold mb-6 text-orange-500">
             Contact Info
           </h3>
@@ -158,9 +192,7 @@ const Footer = () => {
             <div className="flex items-start gap-4">
               <FaMapMarkerAlt className="text-orange-500 mt-1" />
 
-              <p>
-                Mombasa, Kenya
-              </p>
+              <p>Nairobi, Kenya</p>
             </div>
 
             <div className="flex items-center gap-4">
@@ -182,17 +214,19 @@ const Footer = () => {
 
               <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
             </div>
+
           </div>
         </div>
       </div>
 
       {/* Bottom Footer */}
       <div className="border-t border-gray-800">
+
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
 
           <p className="text-gray-400 text-sm text-center">
-            © 2026 MECHTECH Industrial Mechanical Solutions.
-            All rights reserved.
+            © {new Date().getFullYear()} MECHTECH Industrial Mechanical
+            Solutions. All rights reserved.
           </p>
 
           <div className="flex gap-6 text-sm text-gray-400">
@@ -210,8 +244,11 @@ const Footer = () => {
             >
               Terms of Service
             </a>
+
           </div>
+
         </div>
+
       </div>
     </footer>
   );

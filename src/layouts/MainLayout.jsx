@@ -1,51 +1,21 @@
-import { createBrowserRouter } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { Outlet } from "react-router-dom";
 
-import MainLayout from "../layouts/MainLayout";
+const MainLayout = () => {
+  return (
+    <div className="flex flex-col min-h-screen">
 
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Services from "../pages/Services";
-import Projects from "../pages/Projects";
-import SpareParts from "../pages/SpareParts";
-import Contact from "../pages/Contact";
+      <Navbar />
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainLayout />,
+      <main className="flex-1 pt-20">
+        <Outlet />
+      </main>
 
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
+      <Footer />
 
-      {
-        path: "/about",
-        element: <About />,
-      },
+    </div>
+  );
+};
 
-      {
-        path: "/services",
-        element: <Services />,
-      },
-
-      {
-        path: "/projects",
-        element: <Projects />,
-      },
-
-      {
-        path: "/spare-parts",
-        element: <SpareParts />,
-      },
-
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-    ],
-  },
-]);
-
-export default router;
+export default MainLayout;

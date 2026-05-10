@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import { FaTools } from "react-icons/fa";
 
 const Navbar = () => {
@@ -98,9 +98,11 @@ const Navbar = () => {
         </ul>
 
         {/* CTA */}
-        <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg font-semibold transition">
-          Get Quote
-        </button>
+        <Link to="/contact">
+  <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-lg font-semibold transition">
+    Get Quote
+  </button>
+</Link>
       </div>
     </nav>
   );

@@ -23,7 +23,7 @@ const Contact = () => {
           </p>
 
           <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-tight">
-            Request a <span className="text-orange-500">Quote</span>
+            Get a <span className="text-orange-500">Quote</span>
           </h1>
 
           <p className="mt-6 text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
@@ -251,7 +251,7 @@ const Contact = () => {
               </button>
 
               <a
-                href="https://wa.me/254700000000?text=Hello%20MECHTECH,%20I%20would%20like%20to%20request%20a%20quotation."
+                href="https://wa.me/254725427016"
                 target="_blank"
                 rel="noreferrer"
                 className="flex-1 border border-green-500 text-green-600 hover:bg-green-500 hover:text-white py-4 rounded-xl font-semibold transition flex items-center justify-center gap-3"

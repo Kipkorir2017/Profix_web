@@ -21,7 +21,7 @@ const Footer = () => {
         <div>
 
           <h2 className="text-3xl font-extrabold">
-            MECH<span className="text-orange-500">TECH</span>
+            Pro<span className="text-orange-500">Fix</span>
           </h2>
 
           <p className="mt-5 text-gray-300 leading-relaxed">

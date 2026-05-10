@@ -23,7 +23,7 @@ const Contact = () => {
           </p>
 
           <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-tight">
-            Get a <span className="text-orange-500">Quote</span>
+            Get <span className="text-orange-500">Quote</span>
           </h1>
 
           <p className="mt-6 text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">

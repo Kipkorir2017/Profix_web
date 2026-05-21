@@ -1,4 +1,5 @@
 import { FaTools, FaArrowRight, FaPhoneAlt } from "react-icons/fa";
+import Sav from "../assets/images/Sav.jpg";
 
 const Hero = () => {
   return (
@@ -36,7 +37,7 @@ const Hero = () => {
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
 
             <a
-              href="/contact"
+              href="#/contact"
               className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition"
             >
               Get Quote
@@ -44,7 +45,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="/contact"
+              href="#/contact"
               className="border border-white/30 hover:border-orange-500 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition"
             >
               <FaPhoneAlt />
@@ -80,10 +81,11 @@ const Hero = () => {
 
           <div className="relative">
 
+            {/* Image (safe for GitHub Pages build) */}
             <img
-              src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200&auto=format&fit=crop"
+              src={Sav}
               alt="Industrial Engineering Services"
-              className="rounded-2xl shadow-2xl"
+              className="rounded-2xl shadow-2xl w-full h-auto"
             />
 
             {/* Floating card */}

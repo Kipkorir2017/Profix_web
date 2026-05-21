@@ -1,6 +1,12 @@
 import { FaArrowRight } from "react-icons/fa";
 
-const ProjectCard = ({ image, title, category, description }) => {
+const ProjectCard = ({
+  image,
+  title,
+  category,
+  description,
+  onClick,
+}) => {
   return (
     <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl border border-gray-100 transition-all duration-500">
 
@@ -16,14 +22,17 @@ const ProjectCard = ({ image, title, category, description }) => {
         {/* DARK OVERLAY */}
         <div className="absolute inset-0 bg-[#0F172A]/70 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
 
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition shadow-lg">
-            View Project
+          <button
+            onClick={onClick}
+            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition shadow-lg"
+          >
+            View Details
             <FaArrowRight />
           </button>
 
         </div>
 
-        {/* CATEGORY BADGE (IMPROVED) */}
+        {/* CATEGORY BADGE */}
         <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-[#0F172A] px-4 py-2 rounded-full text-xs font-bold shadow-sm uppercase tracking-wider">
           {category}
         </div>
@@ -49,12 +58,15 @@ const ProjectCard = ({ image, title, category, description }) => {
         {/* FOOTER ACTION */}
         <div className="mt-6 flex items-center justify-between">
 
-          <button className="text-orange-500 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-300">
-            Read More
+          <button
+            onClick={onClick}
+            className="text-orange-500 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-300"
+          >
+            Explore Project
             <FaArrowRight className="text-sm" />
           </button>
 
-          {/* SMALL INDICATOR DOTS */}
+          {/* STATUS INDICATOR */}
           <div className="flex gap-1">
             <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
             <span className="w-2 h-2 bg-gray-300 rounded-full"></span>

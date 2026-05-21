@@ -37,6 +37,8 @@ const Home = () => {
 
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard />
+            <ServiceCard />
+            <ServiceCard />
           </div>
 
         </div>
@@ -53,6 +55,8 @@ const Home = () => {
           />
 
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <ProjectCard />
+            <ProjectCard />
             <ProjectCard />
           </div>
 
@@ -104,7 +108,7 @@ const Home = () => {
       </section>
 
       {/* CALL TO ACTION */}
-      <section className="py-24 bg-[#0F172A] text-white">
+      <section className="py-24 bg-[#111C33] text-white mb-10">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h2 className="text-3xl md:text-5xl font-bold">

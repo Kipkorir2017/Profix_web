@@ -1,10 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 
-const ServiceCard = ({
-  icon: Icon,
-  title,
-  description,
-}) => {
+const ServiceCard = ({ icon: Icon, title, description, onClick }) => {
   return (
     <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition duration-500 border border-gray-100 hover:border-orange-200">
 
@@ -26,12 +22,16 @@ const ServiceCard = ({
       {/* Bottom Action */}
       <div className="mt-6 flex items-center justify-between">
 
-        <button className="text-orange-500 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
-          Learn More
+        <button
+          onClick={onClick}
+          className="text-orange-500 font-semibold flex items-center gap-2 hover:gap-3 transition-all"
+        >
+          Explore Service
           <FaArrowRight className="text-sm" />
         </button>
 
         <div className="w-10 h-1 bg-orange-500 rounded-full"></div>
+
       </div>
     </div>
   );

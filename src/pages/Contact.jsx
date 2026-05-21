@@ -84,7 +84,7 @@ const Contact = () => {
                 </h3>
 
                 <p className="mt-2 text-gray-600">
-                  info@profixengineering.com
+                  info@savianengineering.com
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@ const Contact = () => {
                 </h3>
 
                 <p className="mt-2 text-gray-600">
-                  Nairobi, Kenya
+                  Industrial Area, Nairobi, Kenya
                 </p>
               </div>
             </div>

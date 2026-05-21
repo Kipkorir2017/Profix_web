@@ -4,12 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-// Home Page Components
-
-import SectionTitle from "./components/SectionTitle";
-import ServiceCard from "./components/ServiceCard";
-import ProjectCard from "./components/ProjectCard";
-
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -17,9 +11,6 @@ import Services from "./pages/Services";
 import Projects from "./pages/Projects";
 import SpareParts from "./pages/SpareParts";
 import Contact from "./pages/Contact";
-
-// Home Page
-
 
 function App() {
   return (
@@ -31,7 +22,7 @@ function App() {
         {/* Home */}
         <Route path="/" element={<Home />} />
 
-        {/* Other Pages */}
+        {/* Pages */}
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/projects" element={<Projects />} />

@@ -16,34 +16,40 @@ const Hero = () => {
           {/* Badge */}
           <div className="flex items-center gap-2 bg-white/10 w-fit px-4 py-2 rounded-full text-sm mb-6">
             <FaTools className="text-orange-500" />
-            Mechanical & Industrial Solutions
+            Mechanical • HVAC • Fire Protection • Spare Parts
           </div>
 
           {/* Title */}
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-            Reliable <span className="text-orange-500">Mechanical</span> &
-            Industrial Engineering Services
+            Reliable <span className="text-orange-500">Engineering</span>,
+            HVAC & Industrial Solutions
           </h1>
 
           {/* Description */}
           <p className="mt-6 text-gray-300 text-lg leading-relaxed max-w-xl">
-            We provide spare parts, machinery repair, industrial maintenance,
-            and engineering solutions for construction machines, motorcycles,
-            and factory equipment.
+            We provide complete mechanical engineering solutions including HVAC systems,
+            fire protection systems, refrigeration, machinery repair, maintenance,
+            and genuine spare parts supply for industrial and commercial clients.
           </p>
 
           {/* Buttons */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
 
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition">
+            <a
+              href="/contact"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition"
+            >
               Get Quote
               <FaArrowRight />
-            </button>
+            </a>
 
-            <a href="/contact"><button className="border border-white/30 hover:border-orange-500 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition">
+            <a
+              href="/contact"
+              className="border border-white/30 hover:border-orange-500 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition"
+            >
               <FaPhoneAlt />
               Contact Us
-            </button></a>
+            </a>
 
           </div>
 
@@ -76,7 +82,7 @@ const Hero = () => {
 
             <img
               src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200&auto=format&fit=crop"
-              alt="Engineering"
+              alt="Industrial Engineering Services"
               className="rounded-2xl shadow-2xl"
             />
 

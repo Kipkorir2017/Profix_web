@@ -214,7 +214,7 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm text-center">
-            © {new Date().getFullYear()} ProFix Engineering Solutions.
+            © {new Date().getFullYear()} Savian Engineering Solutions.
             All rights reserved.
           </p>
 

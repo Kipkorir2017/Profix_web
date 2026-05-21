@@ -4,64 +4,59 @@ import {
   FaMapMarkerAlt,
   FaWhatsapp,
   FaClock,
+  FaSnowflake,
+  FaShieldAlt,
+  FaWarehouse,
+  FaFan,
 } from "react-icons/fa";
 
 const Contact = () => {
   return (
     <div className="bg-[#F8FAFC] min-h-screen pt-28">
-
       {/* HERO */}
       <section className="relative bg-[#0F172A] text-white py-24 overflow-hidden">
-
         {/* Background Overlay */}
-        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
 
         <div className="relative max-w-7xl mx-auto px-6 text-center">
-
           <p className="text-orange-500 font-semibold uppercase tracking-[4px]">
             Contact Us
           </p>
 
           <h1 className="mt-4 text-4xl md:text-6xl font-extrabold leading-tight">
-            Get <span className="text-orange-500">Quote</span>
+            Request a <span className="text-orange-500">Quote</span>
           </h1>
 
           <p className="mt-6 text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
-            Need fabrication, welding, CNC cutting, machine maintenance,
-            or spare parts supply? Contact our team today and receive
-            professional industrial engineering support.
+            Need HVAC installation, fire protection systems, refrigeration,
+            spare parts supply, ventilation, or mechanical engineering
+            services? Our experienced team is ready to deliver reliable and
+            professional solutions tailored to your project needs.
           </p>
-
         </div>
-
       </section>
 
       {/* CONTACT SECTION */}
       <section className="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-14 items-start">
-
         {/* LEFT SIDE */}
         <div>
-
           <div className="max-w-lg">
-
             <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] leading-tight">
-              Let’s Discuss Your Industrial Project
+              Let’s Discuss Your Project
             </h2>
 
             <p className="mt-5 text-gray-600 leading-relaxed">
-              Whether you need industrial fabrication, machine repairs,
-              welding solutions, or spare parts supply, our team is ready
-              to assist you with reliable engineering services.
+              Whether you require air conditioning systems, fire safety
+              installations, cold room solutions, ventilation systems, or
+              spare parts supply, we are committed to providing dependable,
+              cost-effective, and high-quality engineering services.
             </p>
-
           </div>
 
           {/* INFO CARDS */}
           <div className="mt-10 space-y-6">
-
             {/* Phone */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-5 hover:shadow-lg transition">
-
               <div className="w-14 h-14 rounded-xl bg-orange-100 text-orange-500 flex items-center justify-center text-xl">
                 <FaPhone />
               </div>
@@ -75,12 +70,10 @@ const Contact = () => {
                   +254 700 000 000
                 </p>
               </div>
-
             </div>
 
             {/* Email */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-5 hover:shadow-lg transition">
-
               <div className="w-14 h-14 rounded-xl bg-orange-100 text-orange-500 flex items-center justify-center text-xl">
                 <FaEnvelope />
               </div>
@@ -91,15 +84,13 @@ const Contact = () => {
                 </h3>
 
                 <p className="mt-2 text-gray-600">
-                  info@profix.com
+                  info@profixengineering.com
                 </p>
               </div>
-
             </div>
 
             {/* Location */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-5 hover:shadow-lg transition">
-
               <div className="w-14 h-14 rounded-xl bg-orange-100 text-orange-500 flex items-center justify-center text-xl">
                 <FaMapMarkerAlt />
               </div>
@@ -113,12 +104,10 @@ const Contact = () => {
                   Nairobi, Kenya
                 </p>
               </div>
-
             </div>
 
             {/* Working Hours */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex items-start gap-5 hover:shadow-lg transition">
-
               <div className="w-14 h-14 rounded-xl bg-orange-100 text-orange-500 flex items-center justify-center text-xl">
                 <FaClock />
               </div>
@@ -136,30 +125,24 @@ const Contact = () => {
                   8:00 AM - 6:00 PM
                 </p>
               </div>
-
             </div>
-
           </div>
-
         </div>
 
         {/* RIGHT SIDE FORM */}
         <div className="bg-white p-8 md:p-10 rounded-3xl shadow-lg border border-gray-100">
-
           <div>
-
             <h2 className="text-3xl font-bold text-[#0F172A]">
               Request Quote
             </h2>
 
             <p className="mt-3 text-gray-600">
-              Fill in your project details and our team will get back to you.
+              Fill in your project details and our team will contact you
+              promptly with the best solution.
             </p>
-
           </div>
 
           <form className="mt-8 space-y-6">
-
             {/* Name */}
             <div>
               <label className="block text-sm font-semibold text-[#0F172A] mb-2">
@@ -210,20 +193,29 @@ const Contact = () => {
               >
                 <option>Select Service</option>
 
+                <option>Air Conditioner Installation</option>
+
+                <option>HVAC System Design & Installation</option>
+
+                <option>AC Repair & Maintenance</option>
+
+                <option>Ventilation Systems Installation</option>
+
+                <option>Ducting Fabrication & Installation</option>
+
+                <option>Fire Extinguisher Supply & Installation</option>
+
+                <option>Fire Alarm Systems Installation</option>
+
+                <option>Fire Hose Reel & Hydrant Systems</option>
+
+                <option>Cold Room Installation & Servicing</option>
+
+                <option>Refrigeration Services</option>
+
                 <option>Mechanical Repairs</option>
 
-                <option>Welding & Fabrication</option>
-
-                <option>CNC Fiber Laser Cutting</option>
-
-                <option>CNC Sheet Metal Bending</option>
-
-                <option>Industrial Maintenance</option>
-
                 <option>Spare Parts Supply</option>
-
-                <option>Powder Coating Services</option>
-
               </select>
             </div>
 
@@ -242,7 +234,6 @@ const Contact = () => {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-
               <button
                 type="submit"
                 className="flex-1 bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-xl font-semibold transition shadow-lg hover:shadow-orange-200"
@@ -259,15 +250,10 @@ const Contact = () => {
                 <FaWhatsapp />
                 WhatsApp Us
               </a>
-
             </div>
-
           </form>
-
         </div>
-
       </section>
-
     </div>
   );
 };

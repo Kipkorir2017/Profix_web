@@ -11,7 +11,7 @@ const Navbar = () => {
           <FaTools className="text-orange-500 text-2xl" />
 
           <h1 className="text-2xl font-bold text-white">
-            Pro<span className="text-orange-500">Fix</span>
+            Savian<span className="text-orange-500"></span>
           </h1>
         </div>
 

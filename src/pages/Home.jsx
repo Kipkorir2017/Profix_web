@@ -120,7 +120,7 @@ const Home = () => {
           </p>
 
           <a
-            href="/contact"
+            href="#contact"
             className="inline-block mt-10 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-semibold transition"
           >
             Get a Free Quote

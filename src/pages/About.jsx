@@ -6,7 +6,7 @@ const About = () => {
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 text-center py-16">
         <h1 className="text-4xl md:text-5xl font-bold text-[#0F172A]">
-          About <span className="text-orange-500">ProFix</span>
+          About <span className="text-orange-500">SAVIAN EAST AFRICA LTD</span>
         </h1>
 
         <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">

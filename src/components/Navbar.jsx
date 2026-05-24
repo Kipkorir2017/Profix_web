@@ -17,7 +17,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center gap-3">
           <FaTools className="text-orange-500 text-2xl" />
-          <h1 className="text-2xl font-bold text-white">SAVIAN EA LTD</h1>
+          <h1 className="text-2xl font-bold text-white">SAVIAN E.A LTD</h1>
         </div>
 
         {/* Desktop Menu */}

@@ -4,10 +4,6 @@ import {
   FaMapMarkerAlt,
   FaWhatsapp,
   FaClock,
-  FaSnowflake,
-  FaShieldAlt,
-  FaWarehouse,
-  FaFan,
 } from "react-icons/fa";
 
 const Contact = () => {
@@ -66,9 +62,12 @@ const Contact = () => {
                   Phone Number
                 </h3>
 
-                <p className="mt-2 text-gray-600">
+                <a
+                  href="tel:+254700000000"
+                  className="mt-2 text-gray-600 hover:text-orange-500 transition block"
+                >
                   +254 700 000 000
-                </p>
+                </a>
               </div>
             </div>
 
@@ -83,9 +82,12 @@ const Contact = () => {
                   Email Address
                 </h3>
 
-                <p className="mt-2 text-gray-600">
-                  info@savianengineering.com
-                </p>
+                <a
+                  href="mailto:info@savianeastafrica.com"
+                  className="mt-2 text-gray-600 hover:text-orange-500 transition block"
+                >
+                  info@savianeastafrica.com
+                </a>
               </div>
             </div>
 
@@ -100,7 +102,8 @@ const Contact = () => {
                   Our Location
                 </h3>
 
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 text-gray-600 leading-relaxed">
+                  Commercial House, 3rd Floor, Commercial Street,
                   Industrial Area, Nairobi, Kenya
                 </p>
               </div>
@@ -194,27 +197,16 @@ const Contact = () => {
                 <option>Select Service</option>
 
                 <option>Air Conditioner Installation</option>
-
                 <option>HVAC System Design & Installation</option>
-
                 <option>AC Repair & Maintenance</option>
-
                 <option>Ventilation Systems Installation</option>
-
                 <option>Ducting Fabrication & Installation</option>
-
                 <option>Fire Extinguisher Supply & Installation</option>
-
                 <option>Fire Alarm Systems Installation</option>
-
                 <option>Fire Hose Reel & Hydrant Systems</option>
-
                 <option>Cold Room Installation & Servicing</option>
-
                 <option>Refrigeration Services</option>
-
                 <option>Mechanical Repairs</option>
-
                 <option>Spare Parts Supply</option>
               </select>
             </div>

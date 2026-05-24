@@ -196,7 +196,7 @@ const Footer = () => {
 
             <div className="flex items-center gap-4">
               <FaEnvelope className="text-orange-500" />
-              <p>info@profixengineering.com</p>
+              <p>info@savianeastafrica.com</p>
             </div>
 
             <div>

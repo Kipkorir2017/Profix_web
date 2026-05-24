@@ -60,7 +60,7 @@ const projects = [
 
   {
     id: 5,
-    title: "Air Conditioner Supply & Installation",
+    title: "Air Conditioner Supply,Installation & Maintenance",
     category: "Air Conditioning",
     description:
       "Installation of energy-efficient air conditioning systems for offices, homes, and commercial spaces.",
@@ -68,15 +68,6 @@ const projects = [
     image: sav,
   },
 
-  {
-    id: 6,
-    title: "AC Repair & Maintenance",
-    category: "Maintenance",
-    description:
-      "Professional servicing, troubleshooting, and preventive maintenance for all AC systems.",
-    icon: <FaTemperatureLow />,
-    image: "/images/projects/ac-maintenance.jpg",
-  },
 
   {
     id: 7,
@@ -88,15 +79,6 @@ const projects = [
     image: ventilator,
   },
 
-  {
-    id: 8,
-    title: "Ducting Fabrication & Installation",
-    category: "Fabrication",
-    description:
-      "Custom duct fabrication and HVAC duct installation tailored for industrial applications.",
-    icon: <FaDraftingCompass />,
-    image: "/images/projects/ducting.jpg",
-  },
 
   {
     id: 9,

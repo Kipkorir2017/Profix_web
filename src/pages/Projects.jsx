@@ -17,6 +17,7 @@ import sav from "../assets/images/Sav.jpg"
 import ventilator from "../assets/images/ventilators.jpg"
 import welding from "../assets/images/weldin2.jpeg"
 import plumbingac from  "../assets/images/PlumbingAcc.png.jpeg"
+import coolingtower from "../assets/images/Coolingtowers.jpg"
 const projects = [
   {
     id: 1,
@@ -80,14 +81,14 @@ const projects = [
   },
 
 
-  {
+ {
     id: 9,
-    title: "Cold Room Installation & Servicing",
-    category: "Refrigeration",
+    title: "Cooling Tower Installation & Maintenance",
+    category: "HVAC Systems",
     description:
-      "Design, installation, and maintenance of cold rooms and temperature-controlled storage systems.",
+      "Design, installation, servicing, and maintenance of industrial cooling towers for efficient heat rejection in HVAC and industrial systems.",
     icon: <FaWarehouse />,
-    image: "/images/projects/cold-room.jpg",
+    image: coolingtower,
   },
 
   {

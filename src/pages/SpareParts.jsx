@@ -1,11 +1,9 @@
 import {
   FaTools,
   FaCogs,
-  FaTractor,
   FaMotorcycle,
   FaSnowflake,
   FaIndustry,
-  FaBolt,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import motorcycle from "../assets/images/motorcycle.png"

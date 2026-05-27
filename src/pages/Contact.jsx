@@ -233,7 +233,7 @@ const Contact = () => {
               </button>
 
               <a
-                href="https://wa.me/254725427016"
+                href="https://wa.me/2547*********"
                 target="_blank"
                 rel="noreferrer"
                 className="flex-1 border border-green-500 text-green-600 hover:bg-green-500 hover:text-white py-4 rounded-xl font-semibold transition flex items-center justify-center gap-3"

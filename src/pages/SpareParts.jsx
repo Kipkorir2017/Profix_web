@@ -7,17 +7,14 @@ import {
   FaIndustry,
   FaBolt,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import motorcycle from "../assets/images/motorcycle.png"
+import piston from "../assets/images/piston.jpg"
+import general from "../assets/images/general.jpg"
+import refrig from "../assets/images/refrig.png"
+import motor2 from "../assets/images/motor.jpg"
 
 const spareParts = [
-  {
-    id: 1,
-    name: "Construction Machinery Parts",
-    description:
-      "Heavy-duty spare parts for excavators, loaders, bulldozers, and cranes built for durability.",
-    icon: <FaTractor />,
-    image:
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200&auto=format&fit=crop",
-  },
 
   {
     id: 2,
@@ -25,8 +22,8 @@ const spareParts = [
     description:
       "Reliable motorcycle engines, chains, brakes, and electrical components for all models.",
     icon: <FaMotorcycle />,
-    image:
-      "https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1200&auto=format&fit=crop",
+    image: motorcycle,
+      
   },
 
   {
@@ -35,8 +32,8 @@ const spareParts = [
     description:
       "High-performance components for factories, production lines, and heavy industrial machines.",
     icon: <FaIndustry />,
-    image:
-      "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200&auto=format&fit=crop",
+    image:motor2,
+      
   },
 
   {
@@ -45,19 +42,11 @@ const spareParts = [
     description:
       "Compressors, cooling systems, and gas components for refrigerators and cold rooms.",
     icon: <FaSnowflake />,
-    image:
-      "https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?q=80&w=1200&auto=format&fit=crop",
+    image: refrig,
+      
   },
 
-  {
-    id: 5,
-    name: "Electrical Components",
-    description:
-      "Switches, cables, motors, and control systems for industrial and home applications.",
-    icon: <FaBolt />,
-    image:
-      "https://images.unsplash.com/photo-1581093458791-9d42f1c6a3e3?q=80&w=1200&auto=format&fit=crop",
-  },
+  
 
   {
     id: 6,
@@ -65,8 +54,8 @@ const spareParts = [
     description:
       "Hand tools, power tools, and workshop equipment for repair and maintenance tasks.",
     icon: <FaTools />,
-    image:
-      "https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?q=80&w=1200&auto=format&fit=crop",
+    image: general,
+      
   },
 
   {
@@ -75,8 +64,8 @@ const spareParts = [
     description:
       "Pistons, gear systems, and engine components for multiple mechanical applications.",
     icon: <FaCogs />,
-    image:
-      "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1200&auto=format&fit=crop",
+    image: piston,
+     
   },
 ];
 
@@ -158,9 +147,11 @@ const SpareParts = () => {
             equipment — we’ve got the right solution for you.
           </p>
 
-          <button className="mt-8 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition">
-            Contact Us
-          </button>
+          <Link to="/contact">
+            <button className="mt-8 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition">
+              Contact Us
+            </button>
+          </Link>
 
         </div>
       </section>

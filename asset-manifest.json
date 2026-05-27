@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Profix_web/static/css/main.e70c35e8.css",
-    "main.js": "/Profix_web/static/js/main.27ea99b4.js",
+    "main.js": "/Profix_web/static/js/main.d374e8ae.js",
     "static/media/PlumbingAcc.png.jpeg": "/Profix_web/static/media/PlumbingAcc.png.ae21a779f7a16bb17abd.jpeg",
     "static/media/Coolingtowers.jpg": "/Profix_web/static/media/Coolingtowers.d0a76dfd138c48e5a4fd.jpg",
     "static/media/weldin2.jpeg": "/Profix_web/static/media/weldin2.158c59ade146f355b3e5.jpeg",
@@ -9,13 +9,14 @@
     "static/media/ventilators.jpg": "/Profix_web/static/media/ventilators.337d69ba6512a61890f4.jpg",
     "static/media/firehydr.jpg": "/Profix_web/static/media/firehydr.ddac1d8ac1464d1f635c.jpg",
     "static/media/Sav.jpg": "/Profix_web/static/media/Sav.4c22e53e2e86ee554455.jpg",
+    "static/media/HvacIn.jpg": "/Profix_web/static/media/HvacIn.78727054ced11796518c.jpg",
     "static/media/fireexting.png": "/Profix_web/static/media/fireexting.98b0f61743ffe0c4d4f8.png",
     "index.html": "/Profix_web/index.html",
     "main.e70c35e8.css.map": "/Profix_web/static/css/main.e70c35e8.css.map",
-    "main.27ea99b4.js.map": "/Profix_web/static/js/main.27ea99b4.js.map"
+    "main.d374e8ae.js.map": "/Profix_web/static/js/main.d374e8ae.js.map"
   },
   "entrypoints": [
     "static/css/main.e70c35e8.css",
-    "static/js/main.27ea99b4.js"
+    "static/js/main.d374e8ae.js"
   ]
 }

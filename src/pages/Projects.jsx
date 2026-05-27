@@ -4,9 +4,7 @@ import {
   FaBell,
   FaSnowflake,
   FaFan,
-  FaTemperatureLow,
   FaWarehouse,
-  FaDraftingCompass,
   FaTools,
   FaWrench,
 } from "react-icons/fa";

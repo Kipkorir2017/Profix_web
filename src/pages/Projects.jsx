@@ -18,6 +18,7 @@ import ventilator from "../assets/images/ventilators.jpg"
 import welding from "../assets/images/weldin2.jpeg"
 import plumbingac from  "../assets/images/PlumbingAcc.png.jpeg"
 import coolingtower from "../assets/images/Coolingtowers.jpg"
+import hvac from "../assets/images/HvacIn.jpg"
 const projects = [
   {
     id: 1,
@@ -56,7 +57,7 @@ const projects = [
     description:
       "Complete HVAC planning, ducting, and installation solutions for industrial and commercial buildings.",
     icon: <FaFan />,
-    image: "/images/projects/hvac.jpg",
+    image: hvac,
   },
 
   {
@@ -113,12 +114,12 @@ const projects = [
 ];
 
 const galleryImages = [
-  "/images/gallery/gallery-1.jpg",
-  "/images/gallery/gallery-2.jpg",
-  "/images/gallery/gallery-3.jpg",
-  "/images/gallery/gallery-4.jpg",
-  "/images/gallery/gallery-5.jpg",
-  "/images/gallery/gallery-6.jpg",
+  firehydrant,
+  sav,
+  ventilator,
+  coolingtower,
+  hvac,
+  welding,
 ];
 
 const Projects = () => {

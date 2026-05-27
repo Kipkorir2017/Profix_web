@@ -7,8 +7,18 @@ import {
   FaTemperatureLow,
   FaWarehouse,
   FaDraftingCompass,
+  FaTools,
+  FaWrench,
 } from "react-icons/fa";
-
+import fireexting from "../assets/images/fireexting.png"
+import firealarm from "../assets/images/fireAlarm2.jpg"
+import firehydrant from '../assets/images/firehydr.jpg'
+import sav from "../assets/images/Sav.jpg"
+import ventilator from "../assets/images/ventilators.jpg"
+import welding from "../assets/images/weldin2.jpeg"
+import plumbingac from  "../assets/images/PlumbingAcc.png.jpeg"
+import coolingtower from "../assets/images/Coolingtowers.jpg"
+import hvac from "../assets/images/HvacIn.jpg"
 const projects = [
   {
     id: 1,
@@ -17,8 +27,7 @@ const projects = [
     description:
       "Professional supply and installation of certified fire extinguishers for commercial and industrial premises.",
     icon: <FaShieldAlt />,
-    image:
-      "https://images.unsplash.com/photo-1590496793929-36417d3117de?q=80&w=1200&auto=format&fit=crop",
+    image: fireexting,
   },
 
   {
@@ -28,75 +37,89 @@ const projects = [
     description:
       "Modern fire alarm and detection system installation for enhanced safety and compliance.",
     icon: <FaBell />,
-    image:
-      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop",
+    image: firealarm,
   },
 
   {
     id: 3,
+    title: "Fire Hydrant System Installation",
+    category: "Fire Protection Systems",
+    description:
+      "Complete fire hydrant system installation including pumps, piping, hose reels, hydrant valves, and water storage systems for industrial and commercial safety.",
+    icon: <FaFireAlt />,
+    image: firehydrant,
+  },
+
+  {
+    id: 4,
     title: "HVAC System Design & Installation",
     category: "HVAC Engineering",
     description:
       "Complete HVAC planning, ducting, and installation solutions for industrial and commercial buildings.",
     icon: <FaFan />,
-    image:
-      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop",
-  },
-
-  {
-    id: 4,
-    title: "Air Conditioner Supply & Installation",
-    category: "Air Conditioning",
-    description:
-      "Installation of energy-efficient air conditioning systems for offices, homes, and commercial spaces.",
-    icon: <FaSnowflake />,
-    image:
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop",
+    image: hvac,
   },
 
   {
     id: 5,
-    title: "AC Repair & Maintenance",
-    category: "Maintenance",
+    title: "Air Conditioner Supply,Installation & Maintenance",
+    category: "Air Conditioning",
     description:
-      "Professional servicing, troubleshooting, and preventive maintenance for all AC systems.",
-    icon: <FaTemperatureLow />,
-    image:
-      "https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?q=80&w=1200&auto=format&fit=crop",
+      "Installation of energy-efficient air conditioning systems for offices, homes, and commercial spaces.",
+    icon: <FaSnowflake />,
+    image: sav,
   },
 
+
   {
-    id: 6,
+    id: 7,
     title: "Ventilation Systems Installation",
     category: "Ventilation",
     description:
       "Efficient ventilation and airflow system installation for healthy and safe indoor environments.",
     icon: <FaFan />,
-    image:
-      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop",
+    image: ventilator,
   },
 
-  {
-    id: 7,
-    title: "Ducting Fabrication & Installation",
-    category: "Fabrication",
-    description:
-      "Custom duct fabrication and HVAC duct installation tailored for industrial applications.",
-    icon: <FaDraftingCompass />,
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
-  },
 
-  {
-    id: 8,
-    title: "Cold Room Installation & Servicing",
-    category: "Refrigeration",
+ {
+    id: 9,
+    title: "Cooling Tower Installation & Maintenance",
+    category: "HVAC Systems",
     description:
-      "Design, installation, and maintenance of cold rooms and temperature-controlled storage systems.",
+      "Design, installation, servicing, and maintenance of industrial cooling towers for efficient heat rejection in HVAC and industrial systems.",
     icon: <FaWarehouse />,
-    image:
-      "https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=1200&auto=format&fit=crop",
+    image: coolingtower,
   },
+
+  {
+    id: 10,
+    title: "Plumbing Accessories, installation and Maintenance",
+    category: "Plumbing",
+    description:
+      "Professional plumbing services including piping, drainage systems, water supply installation, and maintenance.",
+    icon: <FaWrench />,
+    image: plumbingac,
+  },
+
+  {
+    id: 11,
+    title: "Welding & Fabrication",
+    category: "Metal Works",
+    description:
+      "Custom welding and metal fabrication solutions for industrial, commercial, and structural projects.",
+    icon: <FaTools />,
+    image: welding,
+  },
+];
+
+const galleryImages = [
+  firehydrant,
+  sav,
+  ventilator,
+  coolingtower,
+  hvac,
+  welding,
 ];
 
 const Projects = () => {
@@ -110,14 +133,14 @@ const Projects = () => {
 
         <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
           We deliver professional fire protection, HVAC, refrigeration,
-          ventilation, and mechanical engineering solutions with quality,
-          safety, and reliability.
+          ventilation, plumbing, welding, fabrication, and mechanical
+          engineering solutions with quality, safety, and reliability.
         </p>
       </section>
 
       {/* Projects Grid */}
       <section className="max-w-7xl mx-auto px-6 pb-24">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <div
               key={project.id}
@@ -168,29 +191,21 @@ const Projects = () => {
             </h2>
 
             <p className="text-gray-600 mt-4">
-              Explore some of our completed HVAC, refrigeration, and fire
-              protection projects.
+              Explore some of our completed HVAC, refrigeration, plumbing,
+              welding, fabrication, and fire protection projects.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <img
-              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop"
-              alt="HVAC Installation"
-              className="rounded-2xl h-72 w-full object-cover hover:scale-105 transition duration-500"
-            />
-
-            <img
-              src="https://images.unsplash.com/photo-1590496793929-36417d3117de?q=80&w=1200&auto=format&fit=crop"
-              alt="Fire Extinguisher Installation"
-              className="rounded-2xl h-72 w-full object-cover hover:scale-105 transition duration-500"
-            />
-
-            <img
-              src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=1200&auto=format&fit=crop"
-              alt="Cold Room Installation"
-              className="rounded-2xl h-72 w-full object-cover hover:scale-105 transition duration-500"
-            />
+            {galleryImages.map((image, index) => (
+              <div key={index} className="overflow-hidden rounded-2xl">
+                <img
+                  src={image}
+                  alt={`Project Gallery ${index + 1}`}
+                  className="rounded-2xl h-72 w-full object-cover hover:scale-105 transition duration-500"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

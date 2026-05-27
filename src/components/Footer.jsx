@@ -23,7 +23,7 @@ const Footer = () => {
         {/* Company Info */}
         <div>
           <h2 className="text-3xl font-extrabold">
-            Sa<span className="text-orange-500">Vian</span>
+            SAVIAN<span className="text-orange-500"> E.A LTD</span>
           </h2>
 
           <p className="mt-5 text-gray-300 leading-relaxed">
@@ -36,29 +36,41 @@ const Footer = () => {
           {/* Socials */}
           <div className="flex gap-4 mt-6">
             <a
-              href="#"
-              className="w-10 h-10 bg-gray-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="w-10 h-10 bg-gray-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition duration-300"
             >
               <FaFacebookF />
             </a>
 
             <a
-              href="#"
-              className="w-10 h-10 bg-gray-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="w-10 h-10 bg-gray-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition duration-300"
             >
               <FaInstagram />
             </a>
 
             <a
-              href="#"
-              className="w-10 h-10 bg-gray-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="w-10 h-10 bg-gray-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition duration-300"
             >
               <FaLinkedinIn />
             </a>
 
             <a
-              href="#"
-              className="w-10 h-10 bg-gray-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition"
+              href="https://wa.me/254700000000"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              className="w-10 h-10 bg-gray-800 hover:bg-orange-500 rounded-full flex items-center justify-center transition duration-300"
             >
               <FaWhatsapp />
             </a>
@@ -72,59 +84,23 @@ const Footer = () => {
           </h3>
 
           <ul className="space-y-4 text-gray-300">
-            <li>
-              <Link
-                to="/"
-                className="hover:text-orange-500 transition"
-              >
-                Home
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to="/about"
-                className="hover:text-orange-500 transition"
-              >
-                About Us
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to="/services"
-                className="hover:text-orange-500 transition"
-              >
-                Services
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to="/projects"
-                className="hover:text-orange-500 transition"
-              >
-                Projects
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to="/spare-parts"
-                className="hover:text-orange-500 transition"
-              >
-                Spare Parts
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                to="/contact"
-                className="hover:text-orange-500 transition"
-              >
-                Contact
-              </Link>
-            </li>
+            {[
+              { path: "/", label: "Home" },
+              { path: "/about", label: "About Us" },
+              { path: "/services", label: "Services" },
+              { path: "/projects", label: "Projects" },
+              { path: "/spare-parts", label: "Spare Parts" },
+              { path: "/contact", label: "Contact" },
+            ].map((link) => (
+              <li key={link.path}>
+                <Link
+                  to={link.path}
+                  className="hover:text-orange-500 transition duration-300"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -135,45 +111,48 @@ const Footer = () => {
           </h3>
 
           <ul className="space-y-4 text-gray-300">
-            <li className="flex items-center gap-3 hover:text-orange-500 transition cursor-pointer">
-              <FaSnowflake className="text-orange-500" />
-              Air Conditioning Installation
-            </li>
-
-            <li className="flex items-center gap-3 hover:text-orange-500 transition cursor-pointer">
-              <FaFan className="text-orange-500" />
-              HVAC Systems
-            </li>
-
-            <li className="flex items-center gap-3 hover:text-orange-500 transition cursor-pointer">
-              <FaShieldAlt className="text-orange-500" />
-              Fire Protection Systems
-            </li>
-
-            <li className="flex items-center gap-3 hover:text-orange-500 transition cursor-pointer">
-              <FaTools className="text-orange-500" />
-              Mechanical Repairs
-            </li>
-
-            <li className="flex items-center gap-3 hover:text-orange-500 transition cursor-pointer">
-              <FaWarehouse className="text-orange-500" />
-              Cold Room Installation
-            </li>
-
-            <li className="flex items-center gap-3 hover:text-orange-500 transition cursor-pointer">
-              <FaTools className="text-orange-500" />
-              Spare Parts Supply
-            </li>
-
-            <li className="flex items-center gap-3 hover:text-orange-500 transition cursor-pointer">
-              <FaFan className="text-orange-500" />
-              Ventilation Systems
-            </li>
-
-            <li className="flex items-center gap-3 hover:text-orange-500 transition cursor-pointer">
-              <FaShieldAlt className="text-orange-500" />
-              Fire Alarm Installation
-            </li>
+            {[
+              {
+                icon: <FaSnowflake className="text-orange-500" />,
+                text: "Air Conditioning Installation",
+              },
+              {
+                icon: <FaFan className="text-orange-500" />,
+                text: "HVAC Systems",
+              },
+              {
+                icon: <FaShieldAlt className="text-orange-500" />,
+                text: "Fire Protection Systems",
+              },
+              {
+                icon: <FaTools className="text-orange-500" />,
+                text: "Mechanical Repairs",
+              },
+              {
+                icon: <FaWarehouse className="text-orange-500" />,
+                text: "Cold Room Installation",
+              },
+              {
+                icon: <FaTools className="text-orange-500" />,
+                text: "Spare Parts Supply",
+              },
+              {
+                icon: <FaFan className="text-orange-500" />,
+                text: "Ventilation Systems",
+              },
+              {
+                icon: <FaShieldAlt className="text-orange-500" />,
+                text: "Fire Alarm Installation",
+              },
+            ].map((service, index) => (
+              <li
+                key={index}
+                className="flex items-center gap-3 hover:text-orange-500 transition duration-300 cursor-pointer"
+              >
+                {service.icon}
+                <span>{service.text}</span>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -185,18 +164,31 @@ const Footer = () => {
 
           <div className="space-y-5 text-gray-300">
             <div className="flex items-start gap-4">
-              <FaMapMarkerAlt className="text-orange-500 mt-1" />
-              <p>Nairobi, Kenya</p>
+              <FaMapMarkerAlt className="text-orange-500 mt-1 flex-shrink-0" />
+              <p>
+                Commercial House, 3rd Floor, Commercial Street,
+                Industrial Area, Nairobi, Kenya
+              </p>
             </div>
 
             <div className="flex items-center gap-4">
-              <FaPhoneAlt className="text-orange-500" />
-              <p>+254 700 000 000</p>
+              <FaPhoneAlt className="text-orange-500 flex-shrink-0" />
+              <a
+                href="tel:+254700000000"
+                className="hover:text-orange-500 transition duration-300"
+              >
+                +254 700 000 000
+              </a>
             </div>
 
             <div className="flex items-center gap-4">
-              <FaEnvelope className="text-orange-500" />
-              <p>info@profixengineering.com</p>
+              <FaEnvelope className="text-orange-500 flex-shrink-0" />
+              <a
+                href="mailto:info@savianeastafrica.com"
+                className="hover:text-orange-500 transition duration-300"
+              >
+                info@savianeastafrica.com
+              </a>
             </div>
 
             <div>
@@ -214,24 +206,24 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm text-center">
-            © {new Date().getFullYear()} Savian Engineering Solutions.
+            © {new Date().getFullYear()} Savian E.A LTD.
             All rights reserved.
           </p>
 
           <div className="flex gap-6 text-sm text-gray-400">
-            <a
-              href="#"
-              className="hover:text-orange-500 transition"
+            <Link
+              to="/privacy-policy"
+              className="hover:text-orange-500 transition duration-300"
             >
               Privacy Policy
-            </a>
+            </Link>
 
-            <a
-              href="#"
-              className="hover:text-orange-500 transition"
+            <Link
+              to="/terms-of-service"
+              className="hover:text-orange-500 transition duration-300"
             >
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>

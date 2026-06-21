@@ -5,8 +5,8 @@ const About = () => {
     <div className="bg-white min-h-screen pt-28">
       {/* Hero */}
       <section className="max-w-7xl mx-auto px-6 text-center py-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#0F172A]">
-          About <span className="text-orange-500">Savian E.A LTD</span>
+        <h1 className="text-2xl font-bold text-black">
+          APEX<span className="text-2xl font-bold text-orange-500">MARK</span>
         </h1>
 
         <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">

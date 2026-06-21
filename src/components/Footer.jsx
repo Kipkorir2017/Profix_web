@@ -22,9 +22,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Company Info */}
         <div>
-          <h2 className="text-3xl font-extrabold">
-            Apex<span className="text-orange-500"> Max</span>
-          </h2>
+                    <h1 className="text-2xl font-bold text-white">APEX<span className="text-2xl font-bold text-orange-500">MARK</span></h1>
 
           <p className="mt-5 text-gray-300 leading-relaxed">
             Trusted mechanical, HVAC, refrigeration, fire protection, and
@@ -206,7 +204,7 @@ const Footer = () => {
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm text-center">
-            © {new Date().getFullYear()} Savian E.A LTD.
+            © {new Date().getFullYear()} APEXMARK.
             All rights reserved.
           </p>
 

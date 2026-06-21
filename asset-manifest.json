@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce12ae1c.css",
-    "main.js": "/static/js/main.f6e142a0.js",
+    "main.css": "/static/css/main.0585c681.css",
+    "main.js": "/static/js/main.5837954c.js",
     "static/media/PlumbingAcc.png.jpeg": "/static/media/PlumbingAcc.png.ae21a779f7a16bb17abd.jpeg",
     "static/media/Coolingtowers.jpg": "/static/media/Coolingtowers.d0a76dfd138c48e5a4fd.jpg",
     "static/media/weldin2.jpeg": "/static/media/weldin2.158c59ade146f355b3e5.jpeg",
@@ -21,11 +21,11 @@
     "static/media/piston.jpg": "/static/media/piston.92b3883cda50b6763bd0.jpg",
     "static/media/fireexting.png": "/static/media/fireexting.98b0f61743ffe0c4d4f8.png",
     "index.html": "/index.html",
-    "main.ce12ae1c.css.map": "/static/css/main.ce12ae1c.css.map",
-    "main.f6e142a0.js.map": "/static/js/main.f6e142a0.js.map"
+    "main.0585c681.css.map": "/static/css/main.0585c681.css.map",
+    "main.5837954c.js.map": "/static/js/main.5837954c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce12ae1c.css",
-    "static/js/main.f6e142a0.js"
+    "static/css/main.0585c681.css",
+    "static/js/main.5837954c.js"
   ]
 }

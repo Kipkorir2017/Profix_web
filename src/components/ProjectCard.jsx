@@ -1,43 +1,54 @@
-import { FaArrowRight } from "react-icons/fa";
-
+import { useState } from "react";
+import firesupp from "../assets/images/Firesuppression.jpg";
+import ventilator from "../assets/images/ventilators.jpg";
+import cooling from "../assets/images/cooling.jpg"
 const ProjectCard = ({
-  image,
+  images = [firesupp, ventilator,cooling],
   title,
   category,
   description,
-  onClick,
 }) => {
+  const [activeImage, setActiveImage] = useState(0);
+
   return (
     <div className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl border border-gray-100 transition-all duration-500">
 
-      {/* IMAGE SECTION */}
+      {/* MAIN IMAGE */}
       <div className="relative overflow-hidden">
 
         <img
-          src={image}
+          src={images[activeImage]}
           alt={title}
           className="w-full h-72 object-cover group-hover:scale-110 transition duration-700"
         />
 
-        {/* DARK OVERLAY */}
-        <div className="absolute inset-0 bg-[#0F172A]/70 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
-
-          <button
-            onClick={onClick}
-            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 transition shadow-lg"
-          >
-            View Details
-            <FaArrowRight />
-          </button>
-
-        </div>
-
         {/* CATEGORY BADGE */}
-        <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-[#0F172A] px-4 py-2 rounded-full text-xs font-bold shadow-sm uppercase tracking-wider">
+        <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-[#0F172A] px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm">
           {category}
         </div>
 
       </div>
+
+      {/* THUMBNAILS */}
+      {images.length > 1 && (
+        <div className="grid grid-cols-4 gap-2 p-3 bg-gray-50">
+
+          {images.map((img, index) => (
+            <img
+              key={index}
+              src={img}
+              alt={`${title}-${index}`}
+              onClick={() => setActiveImage(index)}
+              className={`h-16 w-full object-cover rounded-lg cursor-pointer border-2 transition ${
+                activeImage === index
+                  ? "border-orange-500"
+                  : "border-transparent"
+              }`}
+            />
+          ))}
+
+        </div>
+      )}
 
       {/* CONTENT */}
       <div className="p-6">
@@ -52,28 +63,8 @@ const ProjectCard = ({
           {description}
         </p>
 
-        {/* DIVIDER */}
+        {/* DECORATIVE LINE */}
         <div className="mt-5 w-12 h-[2px] bg-orange-500 rounded-full"></div>
-
-        {/* FOOTER ACTION */}
-        <div className="mt-6 flex items-center justify-between">
-
-          <button
-            onClick={onClick}
-            className="text-orange-500 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-300"
-          >
-            Explore Project
-            <FaArrowRight className="text-sm" />
-          </button>
-
-          {/* STATUS INDICATOR */}
-          <div className="flex gap-1">
-            <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-            <span className="w-2 h-2 bg-gray-300 rounded-full"></span>
-            <span className="w-2 h-2 bg-gray-300 rounded-full"></span>
-          </div>
-
-        </div>
 
       </div>
     </div>

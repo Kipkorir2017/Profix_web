@@ -19,7 +19,7 @@ const Home = () => {
           <SectionTitle
             subtitle="Who We Are"
             title="Mechanical, HVAC, Fire Protection & Spare Parts Experts"
-            description="We are a trusted engineering company delivering reliable mechanical services, HVAC systems, refrigeration solutions, fire protection systems, and genuine spare parts supply for industrial, commercial, and residential clients."
+            description="We are a trusted engineering company delivering reliable mechanical services, HVAC systems, refrigeration solutions, welding,fabrication,fire protection systems, and genuine spare parts supply for industrial, commercial, and residential clients."
           />
 
         </div>
@@ -32,7 +32,7 @@ const Home = () => {
           <SectionTitle
             subtitle="What We Do"
             title="Our Core Services"
-            description="We provide complete engineering solutions including installation, maintenance, fabrication, fire safety systems, HVAC, refrigeration, and spare parts supply."
+            description="We provide complete engineering solutions including installation, maintenance,welding, fabrication, fire safety systems, HVAC, refrigeration, and spare parts supply."
           />
 
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -51,7 +51,7 @@ const Home = () => {
           <SectionTitle
             subtitle="Our Work"
             title="Recent Projects"
-            description="A showcase of our completed HVAC, fire protection, refrigeration, mechanical engineering, and industrial projects."
+            description="A showcase of our completed HVAC, fire protection, refrigeration, mechanical engineering,welding,fabrication and industrial projects."
           />
 
           <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

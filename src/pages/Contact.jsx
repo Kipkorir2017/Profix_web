@@ -200,11 +200,10 @@ const Contact = () => {
                 <option>HVAC System Design & Installation</option>
                 <option>AC Repair & Maintenance</option>
                 <option>Ventilation Systems Installation</option>
-                <option>Ducting Fabrication & Installation</option>
+                <option>Welding and Fabrication</option>
                 <option>Fire Extinguisher Supply & Installation</option>
                 <option>Fire Alarm Systems Installation</option>
                 <option>Fire Hose Reel & Hydrant Systems</option>
-                <option>Cold Room Installation & Servicing</option>
                 <option>Refrigeration Services</option>
                 <option>Mechanical Repairs</option>
                 <option>Spare Parts Supply</option>
@@ -234,7 +233,7 @@ const Contact = () => {
               </button>
 
               <a
-                href="https://wa.me/254725427016"
+                href="https://wa.me/2547*********"
                 target="_blank"
                 rel="noreferrer"
                 className="flex-1 border border-green-500 text-green-600 hover:bg-green-500 hover:text-white py-4 rounded-xl font-semibold transition flex items-center justify-center gap-3"

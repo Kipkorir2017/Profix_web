@@ -23,3 +23,5 @@ Future Backend
 Node.js
 Express.js
 MongoDB
+
+"homepage": "https://kipkorir2017.github.io/Profix_web/",

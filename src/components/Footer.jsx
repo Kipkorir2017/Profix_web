@@ -182,10 +182,10 @@ const Footer = () => {
             <div className="flex items-center gap-4">
               <FaEnvelope className="text-orange-500 flex-shrink-0" />
               <a
-                href="mailto:info@savianeastafrica.com"
+                href="mailto:info@apexmark.com"
                 className="hover:text-orange-500 transition duration-300"
               >
-                info@savianeastafrica.com
+                info@apexmark.com
               </a>
             </div>
 

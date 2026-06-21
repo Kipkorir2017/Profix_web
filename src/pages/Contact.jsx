@@ -86,7 +86,7 @@ const Contact = () => {
                   href="mailto:info@savianeastafrica.com"
                   className="mt-2 text-gray-600 hover:text-orange-500 transition block"
                 >
-                  info@savianeastafrica.com
+                  info@apexmark.com
                 </a>
               </div>
             </div>

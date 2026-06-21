@@ -4,12 +4,13 @@ import {Link} from "react-router-dom"
 import firehydrant from "../assets/images/firehydr.jpg";
 import welding from "../assets/images/weldin2.jpeg";
 import firesuppress from "../assets/images/Firesuppression.jpg"
+import refrig from "../assets/images/refrig.png"
 
 const ServiceCard = ({
   icon: Icon,
   title,
   description,
-  images = [firehydrant, welding,firesuppress],
+  images = [firehydrant, welding,firesuppress,refrig],
   onClick,
 }) => {
   const [currentImage, setCurrentImage] = useState(0);

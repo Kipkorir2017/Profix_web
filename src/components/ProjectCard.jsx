@@ -2,8 +2,10 @@ import { useState } from "react";
 import firesupp from "../assets/images/Firesuppression.jpg";
 import ventilator from "../assets/images/ventilators.jpg";
 import cooling from "../assets/images/cooling.jpg"
+import firehydrant from "../assets/images/Firehydrant.jpg";
+import firesuppression from "../assets/images/firesuppre.jpg"
 const ProjectCard = ({
-  images = [firesupp, ventilator,cooling],
+  images = [firesupp, ventilator,cooling,firehydrant,firesuppression],
   title,
   category,
   description,

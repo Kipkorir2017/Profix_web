@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e70c35e8.css",
-    "main.js": "/static/js/main.21cad0f0.js",
+    "main.css": "/static/css/main.ce12ae1c.css",
+    "main.js": "/static/js/main.f6e142a0.js",
     "static/media/PlumbingAcc.png.jpeg": "/static/media/PlumbingAcc.png.ae21a779f7a16bb17abd.jpeg",
     "static/media/Coolingtowers.jpg": "/static/media/Coolingtowers.d0a76dfd138c48e5a4fd.jpg",
     "static/media/weldin2.jpeg": "/static/media/weldin2.158c59ade146f355b3e5.jpeg",
     "static/media/refrig.png": "/static/media/refrig.b462bf56cc0f0ca8fa4b.png",
+    "static/media/cooling.jpg": "/static/media/cooling.708fbac88144948a8896.jpg",
+    "static/media/Firesuppression.jpg": "/static/media/Firesuppression.9f5b30ee486bb493925b.jpg",
     "static/media/fireAlarm2.jpg": "/static/media/fireAlarm2.f3edc0014d0bf4677d4a.jpg",
+    "static/media/Firehydrant.jpg": "/static/media/Firehydrant.8b6c8c549a6b31ed88e4.jpg",
+    "static/media/firesuppre.jpg": "/static/media/firesuppre.9515def7bce728c1a787.jpg",
     "static/media/ventilators.jpg": "/static/media/ventilators.337d69ba6512a61890f4.jpg",
     "static/media/firehydr.jpg": "/static/media/firehydr.ddac1d8ac1464d1f635c.jpg",
     "static/media/general.jpg": "/static/media/general.a8df0236a33f2ce39dbe.jpg",
@@ -17,11 +21,11 @@
     "static/media/piston.jpg": "/static/media/piston.92b3883cda50b6763bd0.jpg",
     "static/media/fireexting.png": "/static/media/fireexting.98b0f61743ffe0c4d4f8.png",
     "index.html": "/index.html",
-    "main.e70c35e8.css.map": "/static/css/main.e70c35e8.css.map",
-    "main.21cad0f0.js.map": "/static/js/main.21cad0f0.js.map"
+    "main.ce12ae1c.css.map": "/static/css/main.ce12ae1c.css.map",
+    "main.f6e142a0.js.map": "/static/js/main.f6e142a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e70c35e8.css",
-    "static/js/main.21cad0f0.js"
+    "static/css/main.ce12ae1c.css",
+    "static/js/main.f6e142a0.js"
   ]
 }
